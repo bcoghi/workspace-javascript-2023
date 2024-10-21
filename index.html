@@ -25,29 +25,61 @@
                 <script>
                     document.title = "JavaScript Basic -- In class practice -- Yilian Zhang";
                     // use document.write to display a message
-                    
-                    // use console.log to display a message   
+                    document.write("<p>Hi, Great. I am here</p>");
+                    // use console.log to display a message
+                    console.log("This is for debugging");   
                   
                     
                 </script>
             </p>
             <p> Please import external file hello.js here. 
-                
+                <script src="js/hello.js"></script>
             </p>
         </div>
 
         <div class="practice">
             <h1> Variable and Arithemetic Operation</h1>
             <p> Practice on variables </p>
+            <script>
+                var a = parseInt("10");
+                var b = 3;
+                var c = a + b;
+                var d = a - b;
+                var e = a * b;
+                var f = a / b;
+                var g = a % b;
 
+                document.write("<p> a + b = "+c+"</p>");
+                document.write("<p> a - b = "+d+"</p>");
+                document.write("<p> a * b = "+e+"</p>");
+                document.write("<p> a / b = "+f+"</p>");
+                document.write("<p> a % b = "+g+"</p>");
+
+                
+            </script>
 
         </div>
 
         <div class="practice">
             <h1> JavaScript Escape Sequence</h1>
             <p> Write an image to the page </p>
-
+            <script>
+                document.write("<img src=\"img/die1.png\">");
+            </script>
             <p> Write a table to the page </p>
+            <!--
+            <table>
+                <tr>
+                    <th>Head 1</th> <th>Head 2</th>
+                </tr>
+                <tr>
+                    <td>Data 1</td> <td>Data 2</td>
+                </tr>
+            </table>
+            -->
+            <script>
+                document.write("<table> <tr> <th>Head 1</th> <th>Head 2</th> </tr> <tr> <td>Data 1</td> <td>Data 2</td> </tr> </table>");
+            </script>
 
         </div>
 
