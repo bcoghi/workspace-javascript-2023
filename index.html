@@ -87,7 +87,7 @@
             <h1>Window and Document Object </h1>
             <p> Try alert, open, location, url </p>
             <script>
-
+                
             </script>
 
         </div>
@@ -108,6 +108,15 @@
             <p id="p3"> Paragraph Number three </p>
             <p>Please write JavaScript code to change the content of each paragraph.​
             <p>
+            <script>
+                //change the first paragraph
+                const pOne = document.getElementById("p1");
+                pOne.textContent = "I changed";
+                const pTwo = document.getElementById("p2");
+                pTwo.innerHTML = "<b>I also changed, and am bold</b>"
+                const pThree = document.getElementById("p3");
+                pThree.innerHTML = "<i>So have I, but I'm italics</i>"
+            </script>
 
 
         </div>
@@ -117,8 +126,20 @@
             <p> Please enter your numbers </p>
             <script>
                 function calculate() {
+                    //get value from the form and add them up
+                    const input1 = document.getElementsByName('num1')[0];
+                    console.log("The first input is " + input1.value);
+                    
+                    const input2 = document.getElementsByName("num2")[0];
+                    console.log("The second input is " + input2.value);
 
+                    var a = parseFloat(input1.value);
+                    var b = parseFloat(input2.value);
+                    var c = a + b;
+                    console.log(c);
 
+                    const result = document.getElementById("result");
+                    result.textContent = c;
                 }
             </script>
             <p> <input type="text" name="num1" /> + <input type="text" name="num2">
@@ -147,7 +168,14 @@
                     </label>
                 </p>
             </form>
-
+            <script>
+                function welcome(){
+                    alert("Surpise!")
+                }
+                //Event handler
+                const nameE =document.getElementById("cName");
+                nameE.addEventListener("blur", welcome);
+            </script>
         </div>
 
         <div class="practice">

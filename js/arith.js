@@ -1,8 +1,8 @@
 // get the element 
 
 // element --- property
-var num1 = parseInt(document.getElementById('n1').textContent); 
-
+var num1 = parseInt(document.getElementById('num1').textContent); 
+var num2 = parseInt(document.getElementById('num2').textContent);
 
 
 //process
